@@ -1,0 +1,14 @@
+{
+  "name": "strongblock-ext",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "watch": "bun build --minify --watch --no-clear-screen --sourcemap=inline --outfile=build/dist/style.css src/style.css & bun build --minify --format=iife --watch --no-clear-screen --sourcemap=inline --outfile=build/dist/content.js src/index.ts",
+    "build": "bun build --minify --outfile=build/dist/style.css src/style.css && bun build --minify --format=iife --outfile=build/dist/content.js src/index.ts"
+  }
+}

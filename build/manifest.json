@@ -1,0 +1,19 @@
+{
+  "name": "StrongBlock Ext",
+  "description": "엔트리에서 강력크블록을 사용할 수 있도록 해줍니다.",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "matches": ["https://playentry.org/*"],
+    "css": ["dist/style.css"],
+    "js": ["dist/content.js"],
+    "all_frames": true,
+    "run_at": "document_start",
+    "world": "MAIN"
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{a3606fb2-f40b-495a-995a-985324adcba3}"
+    }
+  }
+}
